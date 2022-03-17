@@ -9,8 +9,11 @@ echo 'mount /dev/sda1 /mnt/boot/efi'
 
 #! Test >>>> network-manager-applet dialog mtools dosfstools linux-headers bluez bluez-utils git  xdg-utils xdg-user-dirs wpa_supplicant wireless_tools reflector
 #systemctl
-echo 'pacstrap /mnt --needed --noconfirm base base-devel efibootmgr linux linux-firmware zsh vim networkmanager grub acpid ntp dbus avahi cups cronie lightdm lightdm-slick-greeter auto-cpufreq intel-ucode xfce4
-'
+## Arch-linux
+echo 'pacstrap /mnt --needed --noconfirm base base-devel efibootmgr linux linux-firmware zsh vim networkmanager grub acpid ntp dbus avahi cups cronie lightdm lightdm-slick-greeter auto-cpufreq intel-ucode xfce4'
+## Manjaro
+basestrap /mnt base sudo networkmanager linux5** links nano vim grub mkinitcpio bash-completion
+
 echo 'genfstab -p /mnt >> /mnt/etc/fstab'
 echo 'arch-chroot /mnt/'
 echo 'pc' > /etc/hostname
