@@ -1,8 +1,18 @@
 #!/bin/python
-# -*- coding: utf-8 -*-
-import re
-import sys
-from pytest import console_main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(console_main())
+encoding="UTF-8"
+
+
+# print (5*' ''Sophie')
+
+## Variable
+Freundin='Sophie'
+Kollegin='Susanne'
+# print(Freundin)
+# print(Kollegin)
+# print(Freundin)+ ' ' +(Kollegin)	#! not working
+
+if zahl > 11
+    print('yes')
+else zahl < 11
+    print("no")
+fi
