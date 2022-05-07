@@ -11,8 +11,5 @@ Kollegin='Susanne'
 # print(Kollegin)
 # print(Freundin)+ ' ' +(Kollegin)	#! not working
 
-if zahl > 11
-    print('yes')
-else zahl < 11
-    print("no")
-fi
+#name = input("name:")
+#print(name)
